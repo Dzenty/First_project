@@ -1,0 +1,286 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+  }
+
+  body, html {
+      height: 100%;
+  }
+
+.wrapper, .section-center {
+    display: flex;
+    justify-content: center;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+}
+
+button:hover {
+    background-color:hsl(0, 12%, 98%);
+    color: black;
+}
+
+.logo {
+    color: #E5E7EB;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 2rem;
+}
+
+.wrapper:first-of-type {
+    background-color: #1F2937;
+}
+
+.first-section {
+    display: flex;
+    flex-direction: column;
+    gap: 7rem;
+    padding: 1rem 14rem 7rem;
+}
+
+.first-section, .section-center {
+    max-width: 1440px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+button {
+    background-color: #3882F6;
+    border: 2px solid #3882F6;
+    color: #E5E7EB;
+    border-radius: 5px;
+    padding-inline: 2rem;
+    padding-block: 7px;
+}
+
+h2, p {
+    color: #E5E7EB;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.right-block img {
+    flex: 1;
+    object-fit: cover;
+    max-height: calc(215px + .5rem);
+    border-radius: 7px;;
+}
+
+.left-block {
+       padding: 12px;
+}
+
+.left-block,
+.right-block {
+    flex: 1 1 0;
+}
+
+.right-block {
+    padding: 12px;
+    display: flex;
+}
+
+.img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 150px;
+    background-color: rgb(75, 75, 71);
+    color: white;
+}
+
+.left-block h2 {
+    color: white;
+    font-size: 48px;
+    font-weight: 900;
+    margin: 0;
+}
+
+/* Second section */
+
+#second {
+    padding: 4rem 0;
+}
+
+.section-center {
+    flex-direction: column;
+    align-items: center;
+}
+
+#second h3 {
+    margin-bottom: 3rem;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 36px;
+}
+
+.img-boxes {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.boxes-info  {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 170px;
+    height: 170px;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.boxes-info {
+    color: hsl(0, 0%, 38%);
+}
+
+.box-1 {
+    border: 3px solid #3882F6;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.box-2 {
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.box-3 {
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.box-4 {
+    border: 2px solid #3882F6;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+}
+
+.box-1 img,
+.box-2 img,
+.box-3 img,
+.box-4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill; 
+}
+
+/* Third section */
+
+#thirdWrapper {
+    background-color: hsl(0, 25%, 85%);
+    color: hsl(0, 12%, 98%);
+    margin-bottom: 2rem;
+}
+
+#third {
+    padding: 6rem 14rem 5rem 14rem;
+    gap: 2rem;
+}
+
+#third h3 {
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+h3 {
+    margin-top: 0;
+    font-size: 26px;
+}
+
+#third h4 {
+    margin: 0;
+    align-self: flex-end;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+/* Fourth section */
+
+#fourth {
+    padding-inline: 14rem;
+}
+
+#cta {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+    gap: 2rem;
+    padding: 2rem 10rem;
+    margin-bottom: 3rem;
+    border-radius: 7px;
+    background-color: #3882F6;
+    color: #E5E7EB;
+}
+
+#cta p {
+    margin: 0;
+}
+
+#cta h4 {
+    margin: 0;
+}
+
+h4 {
+    font: 24px;
+}
+
+#sign {
+    border: 2px solid #E5E7EB;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 1.5rem;
+}
+
+/* :root {
+    --c-bg-muted: hsl(348, 52%, 25%);
+    --c-txt-muted: hsl(0, 0%, 94%);
+    --c-txt-muted2: hsl(0, 0%, 38%);
+    --c-txt-white: hsl(0, 0%, 100%);
+    --c-txt-accent: hsl(348, 52%, 38%);
+    --c-highlight: hsl(348, 85%, 63%);
+  } */
